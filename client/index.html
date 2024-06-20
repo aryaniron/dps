@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./sdk.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Downstream Merchant Site</h1>
+    <div class="product">
+      <img src="./product.avif" alt="" />
+      <h1>Product Name</h1>
+      <p>
+        <span>Description:</span> Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quasi eum odit unde quia perferendis deserunt
+        laboriosam cupiditate. Facere molestiae quisquam exercitationem, quae
+        qui repudiandae eos molestias similique? Veritatis, sint ad?
+      </p>
+      <div class="footer">
+        <h3>Rs 22</h3>
+        <button onclick="checkout(22)">Proceed to payment</button>
+      </div>
+    </div>
+
+    <div class="callback success">Payment Successful</div>
+
+    <div class="callback failed">Payment Failed</div>
+
+    <div class="callback cancelled">Payment Cancelled</div>
+  </body>
+</html>
