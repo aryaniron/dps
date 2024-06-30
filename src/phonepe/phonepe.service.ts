@@ -50,8 +50,6 @@ export class PhonepeService {
       },
     };
 
-    console.log(payload);
-
     // make base64 encoded payload
     const bufferObject = Buffer.from(JSON.stringify(payload), 'utf-8');
     const base64EncodedPayload = bufferObject.toString('base64');
@@ -108,7 +106,7 @@ export class PhonepeService {
         headers: {
           'Content-Typpe': 'application/json',
           'X-VERIFY': xVerifyCheckSum,
-          'X-MERCHANT-ID': transactionId,
+          'X-MERCHANT-ID': this.merchant_id,
           accept: 'application/json',
         },
       };
